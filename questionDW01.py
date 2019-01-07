@@ -2,9 +2,9 @@
 # Add comments
 
 # Variables
-correct = 0
-qla = False 
-qlr = 3
+corr = 0
+q1r = False 
+q1a = 3
 
 # Introduction, asks the user 1 question
 print(" Hello, this program only runs one question. All you have to do is"
@@ -18,22 +18,20 @@ print("""What object has teeth but can't bite?
 4) A fork""")
 
 # While loop
-while qla == False:
+while q1r == False:
     try:    
-        qlr = int(input("Choose the wisely. > "))
+        q1a = int(input("Choose the wisely. > "))
          # correct answer "3"
-        if qlr == 3:
-            correct = correct + 1
-            print("Exactly 3 is correct. Things like a saw, "
-                  "zipper and fork could 'bite' you")
+        if q1a == 3:
+            corr = corr + 1
             # if the user answers the question right the boolean turns true
             # and gets out of the while loop
-            qla = True
-        elif 0 < qlr < 5:
-            qlr = True
+            q1r = True
+        elif 0 < q1a < 5:
+            q1r = True
             # If the user doesn't respond with a interger between 1 to 4
         else:
             print("please choose an interger from 1 to 4")
             # If the user doesn't respond with a interger
     except ValueError:
-         print("Invalid response.Please choose either 1, 2, 3 or 4")
+         print("Invalid response.Please choose either option 1, 2, 3 or 4")
