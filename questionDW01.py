@@ -1,5 +1,4 @@
-# Add Variables, question and response
-# Add comments
+# Fix Errors
 
 # Variables
 corr = 0
@@ -23,7 +22,7 @@ while q1r == False:
         q1a = int(input("Choose the wisely. > "))
          # correct answer "3"
         if q1a == 3:
-            corr = corr + 1
+            corr += 1
             # if the user answers the question right the boolean turns true
             # and gets out of the while loop
             q1r = True
@@ -35,3 +34,5 @@ while q1r == False:
             # If the user doesn't respond with a interger
     except ValueError:
          print("Invalid response.Please choose either option 1, 2, 3 or 4")
+print()
+print("You've got", corr * 100,"% out of 100")
